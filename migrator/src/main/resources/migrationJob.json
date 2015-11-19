@@ -34,6 +34,24 @@
                 ],
                 "name": "MigrationJobsToExecute",
                 "unique": false
+            },
+            {
+                "fields": [
+                    {
+                        "dir" : "$asc",
+                        "field": "configurationName"
+                    },
+                    {
+                        "dir" : "$asc",
+                        "field": "query"
+                    },
+                    {
+                        "dir" : "$asc",
+                        "field":"generated"
+                    }
+                ],
+                "name" :"UniqueQuery",
+                "unique":true
             }
         ],
         "name": "migrationJob"
